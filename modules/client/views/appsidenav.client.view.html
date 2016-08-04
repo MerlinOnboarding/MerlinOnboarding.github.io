@@ -1,0 +1,110 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2"
+  md-is-locked-open="$mdMedia('gt-md')"
+   md-disable-backdrop md-component-id="left">
+  <md-toolbar class="md-theme-indigo">
+    <h1 class="md-toolbar-tools">Menu</h1>
+  </md-toolbar>
+  <md-content flex="" role="navigation" class="md-default-theme">
+    <ul class="docs-menu">
+      <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active"
+                  ng-class="{'active' : isSelected()}" ng-href="/app" ng-click="focusSection()" tabindex="0" href="">
+                <span class="ng-binding ng-scope">
+              Home
+            </span>
+            <div class="md-ripple-container"></div>
+          </a>
+        </menu-link>
+        </li>
+       <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active"
+                  ng-class="{'active' : isSelected()}" ng-href="/extension" ng-click="focusSection()" tabindex="0" href="">
+                <span class="ng-binding ng-scope">
+              Extension
+            </span>
+            <div class="md-ripple-container"></div>
+          </a>
+        </menu-link>
+        </li>
+      <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active" 
+                ng-class="{'active' : isSelected()}" ng-href="/users" ng-click="focusSection()" tabindex="0">
+                <span class="ng-binding ng-scope">
+              Users
+            </span>
+            <div class="md-ripple-container"></div>
+          </a>
+        </menu-link>
+        </li>
+        <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active"
+                ng-class="{'active' : isSelected()}" ng-href="/groups" ng-click="focusSection()" tabindex="0">
+                <span class="ng-binding ng-scope">
+              Groups
+            </span>
+            <div class="md-ripple-container"></div>
+          </a>
+        </menu-link>
+        </li>
+        <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active" 
+                ng-class="{'active' : isSelected()}" ng-href="/tasks" ng-click="focusSection()" tabindex="0">
+                <span class="ng-binding ng-scope">
+              Tasks
+            </span>
+            <div class="md-ripple-container"></div>
+          </a>
+        </menu-link>
+        </li>
+        <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active"
+                ng-class="{'active' : isSelected()}" ng-href="/autotasks" ng-click="focusSection()" tabindex="0" href="https://blog.startuptrained.com">
+                <span class="ng-binding ng-scope">
+              Autotasks
+            </span>
+            <div class="md-ripple-container"></div>
+          </a>
+        </menu-link>
+        </li>
+        <li data-ng-show="authentication.user" class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active" 
+                ng-class="{'active' : isSelected()}" ng-href="/companysettings" href="#!/contact" tabindex="0" >
+                <span class="ng-binding ng-scope">
+              Company Settings
+            </span>
+            <div class="md-ripple-container"></div>
+          </a>
+        </menu-link>
+        </li>
+        <li data-ng-show="authentication.user" class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active" 
+                ng-class="{'active' : isSelected()}" ng-href="/checklists" href="#!/contact" tabindex="0" >
+                <span class="ng-binding ng-scope">
+              Checklists
+            </span>
+            <div class="md-ripple-container"></div>
+          </a>
+        </menu-link>
+        </li>
+        <li data-ng-show="!authentication.user" class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active" 
+                ng-class="{'active' : isSelected()}" ng-href="/account" href="#!/contact" tabindex="0" >
+                <span class="ng-binding ng-scope">
+              Your Profile
+            </span>
+            <div class="md-ripple-container"></div>
+          </a>
+        </menu-link>
+        </li>
+    </ul>
+    </md-content>
+</md-sidenav>
