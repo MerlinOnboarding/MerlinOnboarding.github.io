@@ -1,8 +1,8 @@
 <section>
-  <div class="homepageSplash md-default-theme" layout="row">
-    <div flex="50" class="merlinScreenshot">
+  <div class="homepageSplash md-default-theme" layout="row" layout-xs="column">
+    <div flex class="merlinScreenshot" flex-order-xs="2">
     </div>
-    <div flex="50" class="merlinHero">
+    <div flex class="merlinHero" flex-order-xs="1">
         <div class="heroText">
           Magically Simple Onboarding
         </div>
@@ -20,30 +20,27 @@
   </div>
 </section>
 <section class="homepageHowWork">
-  <div layout="row">
-    <div flex="50" style="text-align:center">
-      <img src="/modules/core/client/img/examples/SalesToolWorkflow.png" height="400px"/>
+  <div layout="row" layout-xs="column">
+    <div flex style="text-align:center" class="salesToolWorkflow" flex-order-xs="2">
     </div>
-    <div flex="50" class="rightTextExample">
+    <div flex class="rightTextExample" flex-order-xs="1">
       <h2> Create easy guided workflows for your team </h2>
       <h3> Merlin show your staff how to use the web applications your company uses inside of the software itself.
         <br> No more searching in help centers or 2 hour webinars. </h3> 
     </div>
   </div>
-  <div layout="row">
-    <div flex="50" class="leftTextExample">
+  <div layout="row" layout-xs="column">
+    <div flex class="leftTextExample">
       <h2> Ensure your team performs certain tasks </h2>
       <h3> Merlin allows you to create onboarding tasks and ensures they perform them, <br> giving you piece of mind. </h3> 
     </div>
-    <div flex="50" style="text-align:center">
-      <img src="/modules/core/client/img/examples/HRToolTodo.png" height="400px"/>
+    <div flex style="text-align:center" class="hrToolTodo">
     </div>
   </div>
-  <div layout="row">
-    <div flex="50" style="text-align:center">
-      <img src="/modules/core/client/img/examples/HelpDeskWatching.png" height="400px"/>
+  <div layout="row" layout-xs="column">
+    <div flex style="text-align:center" class="helpCenterWatching" flex-order-xs="2">
     </div>
-    <div flex="50" class="rightTextExample">
+    <div flex class="rightTextExample" flex-order-xs="1">
       <h2> So easy to setup </h2>
       <h3> Just get a team member or manager to perform the task once using the extension and we'll record how they did it.
          <br> No more wasted time learning LMS systems.</h3> 
@@ -57,7 +54,7 @@
               class="button">
               Sign Up
             </md-button>
-            <md-button  href="/notavailable" class="md-raised md-accent md-padding" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+            <md-button href="/notavailable" class="md-raised md-accent md-padding" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
               class="button">
               Show me more benefits
             </md-button>

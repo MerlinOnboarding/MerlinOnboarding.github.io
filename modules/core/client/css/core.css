@@ -546,3 +546,83 @@ md-toolbar md-select.md-default-theme .md-select-label.md-placeholder {
     border: 0;
     color: white;
 }
+
+
+/** stuff */
+
+.salesToolWorkflow {
+  background-image: url("/modules/core/client/img/examples/SalesToolWorkflow.png");
+  background-size: contain;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hrToolTodo {
+  background-image: url("/modules/core/client/img/examples/HRToolTodo.png");
+  background-size: contain;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.helpCenterWatching {
+  background-image: url("/modules/core/client/img/examples/HelpDeskWatching.png");
+  background-size: contain;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 600px) {
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+    .flex.salesToolWorkflow {
+    min-height: 400px;
+  }
+    .flex.hrToolTodo {
+    min-height: 400px;
+  }
+    .flex.helpCenterWatching {
+    min-height: 400px;
+  }
+
+  .rightTextExample  {
+    padding: 10px;
+    text-align: center;
+  }
+  .leftTextExample {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .merlinHero  {
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .heroText {
+    padding-top: 50px;
+    margin-top: 0px;
+    font-size: 2em;
+    text-align: center;
+  }
+  .heroTextTwo {
+    font-size: 1.2em;
+    text-align:center;
+  }
+
+  .md-button.splash {
+    font-size: 16px;
+    padding: 5px 10px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+}
