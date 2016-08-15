@@ -28,6 +28,13 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
         ignoreState: true
       }
     })
+    .state('outsourcing', {
+      url: '/outsourcing',
+      templateUrl: 'modules/core/client/views/outsourcing.client.view.html',
+      data: {
+        ignoreState: true
+      }
+    })
     .state('bad-request', {
       url: '/bad-request',
       templateUrl: 'modules/core/client/views/400.client.view.html',
