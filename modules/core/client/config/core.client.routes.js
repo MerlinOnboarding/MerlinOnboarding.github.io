@@ -29,7 +29,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
       }
     })
     .state('outsourcing', {
-      url: '/outsourcing',
+      url: '/outsourcing.html',
       templateUrl: 'modules/core/client/views/outsourcing.client.view.html',
       data: {
         ignoreState: true
