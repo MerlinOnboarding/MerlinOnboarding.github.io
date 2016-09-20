@@ -4,7 +4,11 @@
     <md-content flex="" role="navigation" class="md-default-theme">
     <ul class="docs-menu">
       <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
-              <menu-link section="section" class="ng-scope ng-isolate-scope"><a class="md-button md-default-theme active" ng-class="{'active' : isSelected()}" ng-href="/" ng-click="focusSection()" tabindex="0" href="">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active" 
+                ng-class="{'active' : isSelected()}" 
+                ng-href="/" ng-click="focusSection()"
+                tabindex="0" href="">
                 <span class="ng-binding ng-scope">
               Home
             </span>
@@ -12,46 +16,14 @@
           </a>
         </menu-link>
         </li>
-      <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
-              <menu-link section="section" class="ng-scope ng-isolate-scope"><a class="md-button md-default-theme active" ng-class="{'active' : isSelected()}" ng-href="/notavailable" ng-click="focusSection()" tabindex="0">
-                <span class="ng-binding ng-scope">
-              Log In
-            </span>
-            <div class="md-ripple-container"></div>
-          </a>
-        </menu-link>
-        </li>
         <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
-              <menu-link section="section" class="ng-scope ng-isolate-scope"><a class="md-button md-default-theme active" ng-class="{'active' : isSelected()}" ng-href="/notavailable" ng-click="focusSection()" tabindex="0">
+              <menu-link section="section" class="ng-scope ng-isolate-scope">
+                <a class="md-button md-default-theme active" 
+                ng-class="{'active' : isSelected()}" 
+                ng-href="/notavailable" ng-click="focusSection()"
+                tabindex="0" href="">
                 <span class="ng-binding ng-scope">
-              Examples
-            </span>
-            <div class="md-ripple-container"></div>
-          </a>
-        </menu-link>
-        </li>
-        <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
-              <menu-link section="section" class="ng-scope ng-isolate-scope"><a class="md-button md-default-theme active" ng-class="{'active' : isSelected()}" ng-href="/notavailable" ng-click="focusSection()" tabindex="0">
-                <span class="ng-binding ng-scope">
-              About
-            </span>
-            <div class="md-ripple-container"></div>
-          </a>
-        </menu-link>
-        </li>
-        <li class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
-              <menu-link section="section" class="ng-scope ng-isolate-scope"><a class="md-button md-default-theme active" ng-class="{'active' : isSelected()}" ng-href="/notavailable" ng-click="focusSection()" tabindex="0" href="https://blog.startuptrained.com">
-                <span class="ng-binding ng-scope">
-              Blog
-            </span>
-            <div class="md-ripple-container"></div>
-          </a>
-        </menu-link>
-        </li>
-        <li data-ng-show="authentication.user" class="parent-list-item ng-scope" ng-class="{'parentActive' : isSectionSelected(section)}">
-              <menu-link section="section" class="ng-scope ng-isolate-scope"><a class="md-button md-default-theme active" ng-class="{'active' : isSelected()}" ng-href="/notavailable" href="#!/notavailable" tabindex="0" >
-                <span class="ng-binding ng-scope">
-              Contact Us
+              Request Access
             </span>
             <div class="md-ripple-container"></div>
           </a>
