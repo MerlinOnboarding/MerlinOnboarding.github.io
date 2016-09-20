@@ -107,7 +107,7 @@ md-sidenav md-content.md-default-theme, md-content {
 
 body {
   background-color: #eee;
-  font-family: 'Ubuntu', 'Lato', 'Roboto', sans-serif;
+  font-family: 'Lato', 'Roboto', sans-serif;
 }
 
 .md-fixed-toolbar {
@@ -169,6 +169,15 @@ https://github.com/google/material-design-icons
   line-height: 70px;
 }
 
+md-dialog {
+  width: 80%;
+}
+
+.oauth-button {
+  cursor: pointer;
+  display: inline-block;
+}
+
 .md-fab {
 
   position: fixed;
@@ -203,25 +212,45 @@ https://github.com/google/material-design-icons
 html, body {margin:0;padding:0;height:100%;}
 
 .homepageSplash {
-  background-image: url('/modules/core/client/img/coverimages/nightsky5.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 600px;
   border-bottom: 1px solid #CCC;
 }
 
-.notavailableSplash {
-  background-image: url('/modules/core/client/img/coverimages/nightsky5.png');
+.nightSky {
+  /*background-image: url('/modules/core/client/img/coverimages/nightsky5.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position:fixed; 
-  display:block; 
-  height:100%; 
-  width:100%; 
-  top:0; 
-  left:0; 
+  background-color: white;
+}
+
+md-sidenav {
+  position:fixed;
+}
+
+md-backdrop {
+  position:fixed;
+}
+
+
+
+@media (min-width: 960px) {
+  .appContainer {
+    padding-left: 320px;
+  }
+}
+
+md-toolbar:not(.md-menu-toolbar) menu-link a.md-button:not(.md-raised) {
+  color: #333;
+}
+
+.notavailableSplash {
+  position:fixed;
+  display:block;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
   padding-top:200px;
   color: white;
 }
@@ -263,9 +292,29 @@ html, body {margin:0;padding:0;height:100%;}
   margin-top: 10px;
 }
 
+@media (min-width: 960px) {
+  .login-card {
+    margin-left: -160px;
+  }
+}
+
+
 .login-card {
-  max-width: 400px;
+  max-width: 460px;
   margin: 0 auto;
+  overflow: auto;
+}
+
+.login-card .formContainer {
+  overflow: auto;
+}
+
+.login-card .formGroup {
+  float: left;
+}
+
+.login-card .oauth-button {
+  float: left;
 }
 
 .twitter {
@@ -275,14 +324,17 @@ html, body {margin:0;padding:0;height:100%;}
 
 .login-card md-input-container {
   width: 100%;
+  margin: 5px 0;
 }
 
 .login-card h3 {
   text-align:center;
+  font-size: 1em;
 }
 
 .login-card h2 {
   text-align:center;
+  font-size: 1.2em;
 }
 
 .homepageHowWork {
@@ -314,19 +366,17 @@ html, body {margin:0;padding:0;height:100%;}
 .heroText {
   font-size: 2.6em;
   text-align: left;
-  color: #FFFFFF;
+  color: #3A3A3A;
   font-weight:200px;
   padding-bottom: 10px;
   padding-top: 35%;
-  text-shadow: 2px 2px 5px #555;
 }
 
 .heroTextTwo {
   font-size: 1.4em;
   text-align: left;
-  color: #FFFFFF;
+  color: #3A3A3A;
   padding-bottom: 10px;
-  text-shadow: 1px 1px #555;
 }
 
 .heroTextDescription {
@@ -345,7 +395,7 @@ html, body {margin:0;padding:0;height:100%;}
 }
 
 md-content.signUpHero {
-  background-color: #1a237e;
+  background-color: #1A82E2;
   color: white;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -573,6 +623,10 @@ md-toolbar md-select.md-default-theme .md-select-label.md-placeholder {
   background-position: center;
 }
 
+.search-container {
+  margin: 0 auto; width: 97%; display: block;
+}
+
 @media (max-width: 600px) {
 
   h2 {
@@ -583,13 +637,13 @@ md-toolbar md-select.md-default-theme .md-select-label.md-placeholder {
     font-size: 1em;
   }
 
-    .flex.salesToolWorkflow {
+  .flex.salesToolWorkflow {
     min-height: 400px;
   }
-    .flex.hrToolTodo {
+  .flex.hrToolTodo {
     min-height: 400px;
   }
-    .flex.helpCenterWatching {
+  .flex.helpCenterWatching {
     min-height: 400px;
   }
 
@@ -609,7 +663,7 @@ md-toolbar md-select.md-default-theme .md-select-label.md-placeholder {
   }
   .heroText {
     padding-top: 50px;
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 2em;
     text-align: center;
   }
